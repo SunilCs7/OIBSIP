@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunil Prasad Yadav's Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navigation">
+        <div class="logo">
+            <img src="./assets/logo.jpg" alt="Portfolio Logo">
+        </div>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="main-section">
+        <div class="intro">
+            <h1 class="name">Sunil Prasad Yadav</h1>
+            <h2 class="role">Full Stack Web Developer</h2>
+            <p class="description">Welcome to my portfolio! Here you'll find my projects, skills, and contact
+                information.</p>
+            <button class="hire-button">Hire Me</button>
+        </div>
+        <div class="profile-image">
+            <img src="./assets/profile.png" alt="Sunil's Photo">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-heading">Projects</h2>
+        <div class="project-container">
+            <div class="project-item">
+                <h3 class="project-title">Weather Forecasting</h3>
+                <p class="project-description">A weather forecasting app.</p>
+                <a href="https://github.com/SunilYadav/Weather-Forecasting" class="view-code" target="_blank">View Code
+                    on GitHub</a>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="section-heading">Skills</h2>
+        <div class="skill-collection">
+            <img src="./assets/HTML.png" alt="HTML">
+            <img src="./assets/CSS.png" alt="CSS">
+            <img src="./assets/Javascript.svg" alt="JavaScript">
+            <!-- Add more skill icons here -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-heading">Contact Me</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" name="user-name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <div class="btn-group">
+                    <button type="reset" class="clear-button">Clear</button>
+                    <button type="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-links">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="social-media-icons">
+            <!-- Add social media icons here -->
+        </div>
+        <p class="copyright">&copy; 2024 Sunil Prasad Yadav</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".role", {
+            strings: [
+                "Full Stack Developer",
+                "Web Developer",
+                "Backend Developer",
+                "Coder"
+            ],
+            loop: true,
+            typeSpeed: 70,
+            backSpeed: 60,
+            backDelay: 1500
+        });
+    </script>
+</body>
+
+</html>
