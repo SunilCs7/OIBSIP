@@ -1,595 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Vibes</title>
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./responsive-styles.css">
-    <!-- FontAwesome Link (For Icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.css">
 </head>
-
-
 <body>
-    <!-- Header Section -->
-    <div class="header">
-        <span><a href="./index.html">GlamourPulse</a></span>
 
-        <!-- Hamburger Icon -->
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </div>
 
-        <ul>
-            <li> <a href="./index.html">Home</a></li>
-            <li> <a href="#products">Products</a></li>
-            <li> <a href="#about">About Us</a></li>
-            <li> <a href="#contact">Contact Us</a></li>
-            <li> <a href="#faqs">FAQs</a></li>
-            <a href="#signup">
-                <button class="button">Signup</button>
-            </a>
-            <a href="#signin">
-                <button class="button">Signin</button>
-            </a>
+    <nav class="nav">
+        <img src="https://t3.ftcdn.net/jpg/03/99/53/44/360_F_399534445_zG1tMcAn0q7bCaPw2Lp5ZWiBiBgQYxvN.jpg" alt="logo" class="nav__logo" />
+        <a href="/" class="nav__title">Sunil.Dev</a>
+        <ul class="nav__links">
+            <li class="nav__link-container"><a class="nav__link" href="#about">About</a></li>
+            <li class="nav__link-container"><a class="nav__link" href="#projects">Projects</a></li>
+            <li class="nav__link-container"><a class="nav__link" href="#contact">Contact</a></li>
         </ul>
-    </div>
-
-
-    <!-- Home Section -->
-    <div class="home-section" id="home">
-        <h1>Welcome to GlamourPulse</h1>
-        <p>Discover the latest trends in women's fashion.</p>
-
-        <!-- Carousel -->
-        <div class="slide-container">
-            <div class="slide">
-                <img src="./assets/hoodie5.jpg" alt="" />
-            </div>
-
-            <div class="slide">
-                <img src="./assets/MiniDress8.jpg" alt="" />
-            </div>
-
-            <div class="slide">
-                <img src="./assets/top5.jpg" alt="" />
-            </div>
-
-            <div class="slide">
-                <img src="./assets/MiniDress5.jpg" alt="" />
-            </div>
-
-            <span class="arrow prev" onclick="controller(-1)">&#10094;&#10094;</span>
-            <span class="arrow next" onclick="controller(1)">&#10095;&#10095;</span>
-        </div>
-
-
-        <!-- Call-to-Action Button -->
-        <div class="cta-button">
-            <a href="#products" class="button">Shop Now</a>
-        </div>
-
-    </div>
-
-
-    <!-- Products Section -->
-    <div class="product-section" id="products">
-
-        <div class="product-heading">Products</div>
-
-        <!-- Jumpsuits -->
-        <div class="jumpsuit-container">
-            <div class="jumpsuit-heading">MiniDress for Women</div>
-
-            <div class="jumpsuit-cards">
-                <div class="card">
-                    <img src="./assets/MiniDress1.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Solid Women MiniDress</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;1099</div>
-                            <div class="last-price">&#8377;1299</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/MiniDress2.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Fit and Flare  Dress</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;599</div>
-                            <div class="last-price">&#8377;649</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/MiniDress3.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Solid Women MiniDress</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;409</div>
-                            <div class="last-price">&#8377;499</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/MiniDress4.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Floral Print Women MiniDress</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;799</div>
-                            <div class="last-price">&#8377;875</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/MiniDress5.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Printed Women MiniDress</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;699</div>
-                            <div class="last-price">&#8377;749</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/MiniDress6.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Floral Print Women MiniDress</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;599</div>
-                            <div class="last-price">&#8377;689</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/MiniDress7.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Solid Women MiniDress</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;699</div>
-                            <div class="last-price">&#8377;749</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/MiniDress8.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Fit and Flare MiniDress Dress</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;599</div>
-                            <div class="last-price">&#8377;649</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/MiniDress9.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Fit and Flare MiniDress </h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;599</div>
-                            <div class="last-price">&#8377;699</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Top -->
-        <div class="top-container">
-            <div class="top-heading">Tops for Women</div>
-
-            <div class="top-cards">
-                <div class="card">
-                    <img src="./assets/top1.jpg.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Casual Puff Sleeves Solid Women Purple Top</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;239</div>
-                            <div class="last-price">&#8377;345</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/top2.jpg.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Casual Puff Sleeves Solid Women  Top</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;429</div>
-                            <div class="last-price">&#8377;559</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/MiniDress3.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Cuffed Sleeves Solid Women  Top</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;1149</div>
-                            <div class="last-price">&#8377;1399</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/top4.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Casual Regular Sleeves Solid Women  Top</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;259</div>
-                            <div class="last-price">&#8377;429</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/top5.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Casual Puff Sleeves Embroidered Women  Top</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;804</div>
-                            <div class="last-price">&#8377;969</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/top6.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Casual Regular Sleeves Printed Women  Top</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;408</div>
-                            <div class="last-price">&#8377;549</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Hoodie -->
-        <div class="hoodie-container">
-            <div class="hoodie-heading">Hoodie for Women</div>
-
-            <div class="hoodie-cards">
-                <div class="card">
-                    <img src="./assets/hoodie1.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Full Sleeve Embroidered Hooded Sweatshirt</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;499</div>
-                            <div class="last-price">&#8377;599</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/hoodie2.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Full Sleeve Embroidered Hooded Sweatshirt</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;499</div>
-                            <div class="last-price">&#8377;549</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/hoodie3.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Full Sleeve Solid Hooded Sweatshirt</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;679</div>
-                            <div class="last-price">&#8377;849</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/hoodie4.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Full Sleeve Printed Hoodie</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;599</div>
-                            <div class="last-price">&#8377;649</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/hoodie5.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Full Sleeve Graphic Print Reversible Sweatshirt</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;529</div>
-                            <div class="last-price">&#8377;699</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./assets/hoodie6.jpg" alt="">
-                    <div class="card-description">
-                        <h4>Full Sleeve Printed Hooded</h4>
-                        <div class="price-container">
-                            <div class="current-price">&#8377;483</div>
-                            <div class="last-price">&#8377;549</div>
-                        </div>
-                        <div class="size">S, M, L, XL, XXL</div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
-
-    <!-- About Us Section -->
-    <div class="about-section" id="about">
-        <h1 class="about-heading">
-            About Us
-        </h1>
-
-        <div class="about-container">
-            <p class="about-description">
-            Welcome to GlamourPulse, where our passion lies in curating a distinctive and stylish online shopping journey for you.
-            Our inception stems from the vision of crafting a platform that transcends mere products, aiming instead to cultivate a
-            lifestyle where self-expression through fashion reigns supreme.
-            </p>
-
-            <div class="about-highlights">
-                <div class="highlight-item">
-                    <h2 class="highlight-heading">Quality Products</h2>
-                    <p class="highlight-description">Discover a curated collection of high-quality clothing items that
-                        reflect the latest trends and timeless styles.</p>
-                </div>
-
-                <div class="highlight-item">
-                    <h2 class="highlight-heading">Customer Satisfaction</h2>
-                    <p class="highlight-description">Your satisfaction is our priority. We strive to provide excellent
-                        customer service, ensuring a seamless and enjoyable shopping journey.</p>
-                </div>
-
-                <div class="highlight-item">
-                    <h2 class="highlight-heading">Fashion with Purpose</h2>
-                    <p class="highlight-description">More than just a clothing store, we believe in fashion with
-                        purpose.
-                        Our mission is to inspire confidence and empower individuals through the art of dressing well.
-                    </p>
+    </nav>
+    <main>
+        <section class="main-container">
+            <div>
+                <h1 class="title">
+                    <p>Welcome to my</p>
+                    Personal Website
+                </h1>
+                <div class="adjuster"></div>
+                <p class="desc">
+                    Hello! I'm Sunil Prasad Yadav. <br />
+                    A programmer from Bhubaneswar, India. <br />
+                    <br />
+                    Welcome to my personal website, In this <br />
+                    webpage, you will see all the projects that I built, <br />
+                    And my journey as web devloper.
+                </p>
+                <div class="input-container">
+                    <input placeholder='Enter your email' data-email-sender class="input-container__input" />
+                    <button class="send-me-message" data-email>
+                        Email me!
+                    </button>
                 </div>
             </div>
-
-        </div>
-    </div>
-
-
-    <!-- Contact Form -->
-    <div class="contact-section" id="contact">
-        <h1 class="contact-heading">
-            Contact Us
-        </h1>
-        <div class="contact-container">
-
-            <form class="contact-form">
-                <input type="text" name="user-name" placeholder="Your Name">
-
-                <input type="email" name="email" placeholder="Your Email">
-
-                <textarea name="message" placeholder="Your Message"></textarea>
-
-                <div class="btn-group">
-                    <button type="reset" class="clear-button">Clear</button>
-                    <button type="submit" class="submit-button">Submit</button>
-                </div>
-
-            </form>
-
-        </div>
-    </div>
-
-
-
-    <!-- Signin Form -->
-    <div class="signin-section" id="signin">
-        <h1 class="signin-heading">
-            Signin
-        </h1>
-        <div class="signin-container">
-
-            <form class="signin-form">
-                <input type="text" name="user-name" placeholder="Username">
-
-                <input type="password" name="password" placeholder="Password">
-
-                <div class="btn-group">
-                    <button type="reset" class="clear-button">Clear</button>
-                    <button type="submit" class="submit-button">Signin</button>
-                </div>
-
-            </form>
-
-        </div>
-    </div>
-
-
-    <!-- Signup Form -->
-    <div class="signup-section" id="signup">
-        <h1 class="signup-heading">
-            Signup
-        </h1>
-        <div class="signup-container">
-
-            <form class="signup-form">
-                <input type="text" name="name" placeholder="Name">
-                <input type="text" name="user-name" placeholder="Username">
-                <input type="email" name="email" placeholder="Email">
-                <input type="password" name="password" placeholder="Password">
-                <input type="text" name="address" placeholder="Address">
-
-                <div class="btn-group">
-                    <button type="reset" class="clear-button">Clear</button>
-                    <button type="submit" class="submit-button">Signup</button>
-                </div>
-            </form>
-
-        </div>
-    </div>
-
-
-
-    <!-- FAQs Section -->
-    <div class="faq-section" id="faqs">
-        <h1 class="faq-heading">
-            Frequently Asked Questions (FAQs)
-        </h1>
-
-        <div class="faq-container">
-            <div class="faq-item">
-                <div class="faq-header">
-                    <h3 class="question">How can I track my order?</h3>
-                    <button class="toggle-btn">+</button>
-                </div>
-                <p class="answer" style="display: none;">Once your order is shipped, you will receive a tracking
-                    number and
-                    a link to track your order's status.</p>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-header">
-                    <h3 class="question">What payment methods do you accept?</h3>
-                    <button class="toggle-btn">+</button>
-                </div>
-                <p class="answer" style="display: none;">We accept various payment methods, including credit cards,
-                    debit
-                    cards, and secure online payment gateways (Gpay, UPI).</p>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-header">
-                    <h3 class="question">Can I modify or cancel my order after placing it?</h3>
-                    <button class="toggle-btn">+</button>
-                </div>
-                <p class="answer" style="display: none;">Unfortunately, once an order is placed, it cannot be
-                    modified or
-                    canceled. Please review your order carefully before confirming.</p>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-header">
-                    <h3 class="question">What is your return policy?</h3>
-                    <button class="toggle-btn">+</button>
-                </div>
-                <p class="answer" style="display: none;">We have a hassle-free return policy. If you're not
-                    satisfied with
-                    your purchase, you can return it within 30 days for a refund or exchange.</p>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-header">
-                    <h3 class="question">Are there any shipping charges?</h3>
-                    <button class="toggle-btn">+</button>
-                </div>
-                <p class="answer" style="display: none;">Shipping is free on orders above a certain amount. For
-                    orders below
-                    that threshold, a nominal shipping fee will be applied.</p>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-header">
-                    <h3 class="question"> How can I contact customer support?</h3>
-                    <button class="toggle-btn">+</button>
-                </div>
-                <p class="answer" style="display: none;">Our customer support team is available via email at
-                    support@onlinestore.com or through our contact form on the website. We strive to respond promptly.
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="html"
+                class="animated-icon html" />
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" alt="css"
+                class="animated-icon css" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="js"
+                class="animated-icon js" />
+            <img src="https://tse1.mm.bing.net/th?id=OIP.K-4RqDC6zFrpAG31ayDDOgHaHa&pid=Api&rs=1&c=1&qlt=95&w=119&h=119" alt="react" class="animated-icon react" />
+        </section>
+        <div class="divider"></div>
+        <section class="about">
+            <div class="about__text-section">
+                <h2 id="about" class="about__title">About me</h2>
+                <p class="about__desc">
+                    Hello! I am Sunil. <br />
+                    A WEB / React developer and a Backend  learner <br />
+                    <br />
+                    This website is one of my individual projects of<br />
+                    Oasis Infobyte internship
+    
                 </p>
             </div>
-        </div>
-
-    </div>
-
-
-    <!-- Footer Section -->
-    <div class="footer-section">
-
-        <div class="footer-wrapper">
-            <div class="footer-links">
-                <ul>
-                    <li> <a href="./index.html">Home</a></li>
-                    <li> <a href="#products">Products</a></li>
-                    <li> <a href="#About">About Us</a></li>
-                    <li> <a href="#contact">Contact Us</a></li>
-                    <li> <a href="#faqs">FAQs</a></li>
-                    <li> <a href="#signin">Signin</a></li>
-                    <li> <a href="#signup">Signup</a></li>
-                </ul>
+            <img src="./assets/github.jpg"
+                alt="pfp" class="about__image-float" />
+        </section>
+        <div class="divider"></div>
+        <section class="projects" id="projects">
+            <h2 class="projects__title">Projects</h2>
+            <div class="card__container">
+                <div class="projects__card">
+                    <img src="./assets/Razorpay.jpeg"
+                        alt="project-img" class="card__image" />
+                    <h3 class="card__title">Razorpay</h3>
+                </div>
+                <div class="projects__card">
+                    <img src="https://user-images.githubusercontent.com/70088342/160780381-7c947640-422e-4729-abae-21911e9bc716.png"
+                        alt="project-img" class="card__image" />
+                    <h3 class="card__title">Digital Ecommerce</h3>
+                </div>
+                <div class="projects__card">
+                    <img src="./assets/OwnTube (1).jpeg"
+                        alt="project-img" class="card__image" />
+                    <h3 class="card__title">Own-Tube</h3>
+                </div>
+                <div class="projects__card">
+                    <img src="./assets/Inspireboard.jpeg"
+                        alt="project-img" class="card__image" />
+                    <h3 class="card__title">Inspireboard</h3>
+                </div>
             </div>
+        </section>
+        <div class="divider"></div>
+        <section id="contact" class="contact">
+            <form>
+                <h2 class="contact__title">Contact</h2>
+                <div>
+                    <input class="contact__input" placeholder="Email" data-email-contact />
+                    <input class="contact__input" placeholder="Subject" data-subject-contact />
+                </div>
+                <textarea class="contact__textfield" data-body-contact placeholder="Message"></textarea>
+                <button type="submit" class="contact__submit" data-send-btn>
+                    Send Email
+                </button>
+            </form>
+            <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_lstnp9p3.json" background="transparent"
+                speed="1" class="contact__animation" loop autoplay />
+        </section>
+    </main>
+    <footer>
+        <p>♥ Made with love by Sunil ♥</p>
+    </footer>
 
-            <!-- Social Media Links -->
-            <div class="social-media-icons">
-                <a href="https://www.facebook.com/rambarosh.yadav.18" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/sunilc137/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://twitter.com/SunilCS137" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/sunil-prasad-yadav/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://t.me/Sunil_137" target="_blank">
-                    <i class="fab fa-telegram"></i>
-                </a>
-                
-                <a href="https://github.com/SunilCs7" target="_blank">
-                    <i class="fab fa-github"></i>
-                
-            </div>
-
-        </div>
-
-        <p class="copyright-text">&copy;Suraj Kumar Sah</p>
-    </div>
-
-    <!-- Scripts -->
-    <script src="./script.js"></script>
+    
+        <script src="./Script.js"></script>
 
 </body>
-
 </html>
