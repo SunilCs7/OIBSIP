@@ -1,16 +1,13 @@
+// Script for Smooth Scroll Animation
+
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll(".menu-items ul li a").forEach((anchor) => {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
 
-      const targetId = this.getAttribute("href");
-      const targetElement = document.querySelector(targetId);
-
-      if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: "smooth",
-        });
-      }
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth",
+      });
     });
   });
 });

@@ -4,113 +4,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunil Prasad Yadav's Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navigation">
-        <div class="logo">
-            <img src="./assets/logo.jpg" alt="Portfolio Logo">
+    <div class="navigation-ribbon">
+        <div class="navBar">
+            <div class="logo">
+                <img src="./assets/logoo.png" alt="logo">
+            </div>
+
+            <div class="menu-items">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+
         </div>
-        <ul class="menu">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    </div>
+
 
     <!-- Main Section -->
-    <section class="main-section">
-        <div class="intro">
-            <h1 class="name">Sunil Prasad Yadav</h1>
-            <h2 class="role">Full Stack Web Developer</h2>
-            <p class="description">Welcome to my portfolio! Here you'll find my projects, skills, and contact
-                information.</p>
-            <button class="hire-button">Hire Me</button>
+    <div class="main-section">
+
+        <div class="faded-name">Sunil Prasad Yadav</div>
+
+        <div class="left">
+            <div class="heading">Hi Warrior! Sunil Prasad Yadav</div>
+
+            <div class="sub-heading">
+                I am a <span class="role" id="my-role">Web Developer</span>
+            </div>
+
+        <div class="description">
+            I'm a React Developer, Full Stack Developer, and Backend Developer, with a passion for Machine Learning. Welcome to
+            my portfolio website where you'll discover my journey in crafting cutting-edge web applications and exploring the
+            realms of Machine Learning.
         </div>
-        <div class="profile-image">
-            <img src="./assets/profile.png" alt="Sunil's Photo">
+
+
+            <button class="modern-button">Hire Me-></button>
+
         </div>
-    </section>
+
+        <div class="right">
+            <div class="photo">
+                <img src="./assets/profile.jpg" alt="My Photo">
+            </div>
+        </div>
+    </div>
 
     <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <h2 class="section-heading">Projects</h2>
+    <div class="projects" id="projects">
+        <h1 class="project-heading">
+            Projects
+        </h1>
         <div class="project-container">
-            <div class="project-item">
-                <h3 class="project-title">Weather Forecasting</h3>
-                <p class="project-description">A weather forecasting app.</p>
-                <a href="https://github.com/SunilYadav/Weather-Forecasting" class="view-code" target="_blank">View Code
-                    on GitHub</a>
+            <div class="project-item project-card1">
+                <div class="project-1">
+                    <div class="content">
+                        <h3 class="project-title">Weather Forecasting</h3>
+                        <p>
+                            <a href="https://github.com/SunilCs7/Weather_App" target="_blank"
+                                class="modern-button">View Code
+                                on GitHub <img src="./assets/github.svg" alt=""></a>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <!-- Add more projects here -->
+
+            <div class="project-item project-card2">
+                <div class="project-2">
+                    <div class="content">
+                        <h3 class="project-title">Password Generator</h3>
+                        <p>
+                            <a href="https://github.com/SunilCs7/PassWord_Generator" target="_blank"
+                                class="modern-button">View Code on
+                                GitHub <img src="./assets/github.svg" alt=""></a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item project-card3">
+                <div class="project-3">
+                    <div class="content">
+                        <h3 class="project-title">Own Youtube</h3>
+                        <p>
+                            <a href="https://github.com/SunilCs7/OwnUTube" target="_blank"
+                                class="modern-button">View Code on
+                                GitHub <img src="./assets/github.svg" alt=""></a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
 
     <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <h2 class="section-heading">Skills</h2>
-        <div class="skill-collection">
-            <img src="./assets/HTML.png" alt="HTML">
-            <img src="./assets/CSS.png" alt="CSS">
-            <img src="./assets/Javascript.svg" alt="JavaScript">
-            <!-- Add more skill icons here -->
+    <div class="skill-section" id="skills">
+        <div class="skill-text">
+            <div class="skill-heading">
+                Me and My Tech Stack
+            </div>
+            <div class="skill-description">
+        Greetings! I'm Sunil Prasad Yadav, a seasoned Full Stack Web Developer with expertise in crafting robust web solutions.
+            </div>
         </div>
-    </section>
+
+        <div class="skill-collection">
+            <img src="./assets/HTML.png" alt="">
+            <img src="./assets/CSS.png" alt="">
+            <img src="./assets/Javascript.svg" alt="">
+            <img src="./assets/Tailwind.png" alt="">
+            <img src="./assets/React.png" alt="">
+            <img src="./assets/NodeJs.svg" alt="">
+            <img src="./assets/Express.png" alt="">
+            <img src="./assets/MongoDB.svg" alt="">
+            <img src="./assets/cpp.svg" alt="">
+            <img src="./assets/java.svg" alt="">
+            <img src="./assets/python.svg" alt="">
+        </div>
+    </div>
+
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2 class="section-heading">Contact Me</h2>
+    <div class="contact-section" id="contact">
+        <h1 class="contact-heading">
+            Contact Me
+        </h1>
         <div class="contact-container">
+
             <form class="contact-form">
                 <input type="text" name="user-name" placeholder="Your Name">
+
                 <input type="email" name="email" placeholder="Your Email">
+
                 <textarea name="message" placeholder="Your Message"></textarea>
+
                 <div class="btn-group">
-                    <button type="reset" class="clear-button">Clear</button>
-                    <button type="submit" class="submit-button">Submit</button>
+                    <button type="reset" class="modern-button">Clear</button>
+                    <button type="submit" class="modern-button">Submit</button>
                 </div>
+
             </form>
+
         </div>
-    </section>
+    </div>
+
 
     <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-links">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <div class="footer-section">
+
+        <div class="footer-wrapper">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+
+                    <li><a href="#projects">Projects</a></li>
+
+                    <li><a href="#skills">Skills</a></li>
+
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/rambarosh.yadav.18" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/sunilc137/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/SunilCS137" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sunil-prasad-yadav/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://t.me/Sunil_137" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            
+                <a href="https://github.com/SunilCs7" target="_blank">
+                    <i class="fab fa-github"></i>
+            
+            </div>
+
         </div>
-        <div class="social-media-icons">
-            <!-- Add social media icons here -->
-        </div>
-        <p class="copyright">&copy; 2024 Sunil Prasad Yadav</p>
-    </footer>
+
+        <p class="copyright-text">&copy;Sunil Prasad Yadav</p>
+    </div>
+
 
     <!-- Script -->
     <script src="./script.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
     <script>
-        var typeData = new Typed(".role", {
-            strings: [
-                "Full Stack Developer",
-                "Web Developer",
-                "Backend Developer",
-                "Coder"
-            ],
-            loop: true,
-            typeSpeed: 70,
-            backSpeed: 60,
-            backDelay: 1500
-        });
+        var typeData = new Typed(".role",
+            {
+                strings: [
+                    "React Develop",
+                    "Full Stack Developer",
+                    "Web Developer",
+                    "Python Developer",
+                    "Backend Developer",
+                    "Coder",
+                ],
+                loop: true,
+                typeSpeed: 70,
+                backSpeed: 60,
+                backDe1ay: 1500,
+            });
     </script>
+
 </body>
 
 </html>
